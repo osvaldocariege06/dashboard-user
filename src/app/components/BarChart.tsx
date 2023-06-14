@@ -11,6 +11,7 @@ import {
   Title,
   Tooltip,
   Legend,
+  ChartData,
 } from "chart.js";
 
 ChartJS.register(
@@ -22,12 +23,31 @@ ChartJS.register(
   Legend
 );
 
+interface ChartDataProps {
+  labels: string[];
+  datasets: ChartDataset[];
+}
+
+interface ChartDataset {
+  label: string;
+  data: string[];
+  borderColor: string;
+  backgroundColor: string;
+}
+
 export function BarChart() {
 
-
-  const [chartData, setChartData] = useState({
-    datasets: []
-  })
+  const [chartData, setChartData] = useState<ChartDataProps>({
+    labels: [],
+    datasets: [
+      {
+        label: '',
+        data: [],
+        borderColor: '',
+        backgroundColor: '',
+      },
+    ],
+  });
 
   const [chartOptions, setChartOptions] = useState({})
 
