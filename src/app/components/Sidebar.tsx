@@ -19,12 +19,12 @@ export function Sidebar() {
             <RxDashboard  size={20} />
           </div>
         </Link>
-        <Link href={'/pages/customers'}>
+        <Link href={'/customers'}>
           <div className="bg-gray-100 hover:bg-gray-100 cursor-pointer my-4 p-3 rounded-lg inline-block">
             <RxPerson  size={20} />
           </div>
         </Link>
-        <Link href={'/pages/orders'}>
+        <Link href={'/orders'}>
           <div className="bg-gray-100 hover:bg-gray-100 cursor-pointer my-4 p-3 rounded-lg inline-block">
             <HiOutlineShoppingBag  size={20} />
           </div>

@@ -1,4 +1,4 @@
-import { Header } from './components/Header'
+
 import { Sidebar } from './components/Sidebar'
 import './globals.css'
 import { Inter } from 'next/font/google'
@@ -20,8 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="grid grid-cols-[100px_1fr]">
           <Sidebar />
-        <main className='bg-zinc-100 h-screen'>
-          <Header />
+        <main className='bg-zinc-100 h-screen p-6'>
           {children}
         </main>
         </div>

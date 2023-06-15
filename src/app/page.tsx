@@ -3,10 +3,12 @@ import Image from 'next/image'
 import { TopCards } from './components/TopCards'
 import { BarChart } from './components/BarChart'
 import { RecentOrders } from './components/RecentOrders'
+import { Header } from './components/Header'
 
 export default function Home() {
   return (
    <>
+   <Header />
    <TopCards />
   <section className="grid lg:grid-cols-3 grid-cols-1 p-4 gap-4">
   <BarChart />
