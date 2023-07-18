@@ -1,19 +1,14 @@
-import Image from 'next/image'
 
-import { TopCards } from './components/TopCards'
-import { BarChart } from './components/BarChart'
-import { RecentOrders } from './components/RecentOrders'
-import { Header } from './components/Header'
 
-export default function Home() {
+
+export default function Login() {
+
   return (
-   <>
-   <Header />
-   <TopCards />
-  <section className="grid lg:grid-cols-3 grid-cols-1 p-4 gap-4">
-  <BarChart />
-   <RecentOrders />
-  </section>
-   </>
-  )
+    <div className="bg-gray-100 min-h-screen w-full overflow-hidden flex justify-center items-center">
+      <div className="flex flex-col gap-4 w-full max-w-lg justify-center items-center">
+        <h1 className="text-sky-950 font-bold text-3xl">Admin Dashboard</h1>
+        <span className="text-zinc-400 leading-relaxed">Sign in with your Google account</span>
+      </div>
+    </div>
+  );
 }
